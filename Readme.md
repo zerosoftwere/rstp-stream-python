@@ -1,4 +1,4 @@
-# Streaming video via RSTP
+# Streaming video via RTSP
 Spike on streaming video from a remote ip camera
 
 ## Requirements
