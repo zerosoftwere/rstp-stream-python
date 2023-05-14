@@ -1,0 +1,36 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container" id="container">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 mt-5">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="rstp://address:port/path"
+          id = "rstp-url"
+        />
+        <button class="btn btn-success" type="button" id="connectBtn">
+          Connect
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-8 offset-lg-2" id="preview-box">
+    <h3 class="mt-5">Preview</h3>
+    <div class="preview-placeholder">
+      <h3>Connect to live stream</h3>
+    </div>
+  </div>
+  <div id="stream-placeholder">
+
+  </div>
+  <template id="live-stream">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2" id="img-box">
+        <h3 class="mt-5">Preview</h3>
+      </div>
+    </div>
+  </template>
+</div>
+<script src="{{ url_for('static', filename='js/stream.js') }}"></script>
+{% endblock %}
